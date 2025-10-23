@@ -1,6 +1,6 @@
 baseURL = 'https://craigforshaw.github.io/'
 languageCode = 'en-us'
-title = "Craig Forshaw's Technical Blog"
+title = "My Technical Blog"
 theme = 'PaperMod'
 
 [pagination]
