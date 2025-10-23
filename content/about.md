@@ -3,9 +3,24 @@ title: "About"
 url: "/about/"
 ---
 
-# About Me
+# Craig Forshaw
 
-Welcome to my blog! This is where I share my thoughts, ideas, and technical writings.
+Cloud architect & Microsoft MVP who enjoys working with Azure security, DevOps, GitHub Advanced Security, and infrastructure as code. Always learning, always sharing.
 
-Feel free to explore the posts and connect with me on [GitHub](https://github.com/craigforshaw).
+- 💼 Senior Cloud Solutions Architect at [Atea](https://www.atea.no/)
+- 🏆 Microsoft MVP — Cloud Security
+- 🌍 Based in Norway
+- 🧭 Focus areas: Azure, Microsoft Security, DevOps, Infrastructure as Code
+
+## Links
+
+- 🔗 Website/Blog: [blog.forsh.dev](https://blog.forsh.dev)
+- 🐙 GitHub: [@craigforshaw](https://github.com/craigforshaw)
+- 💼 LinkedIn: [in/craig4shaw](https://www.linkedin.com/in/craig4shaw)
+
+## More
+
+If you’d like to collaborate, speak, or have questions—reach out on LinkedIn. You can also find my talks and demos in my GitHub repos.
+
+![Craig Forshaw](https://avatars.githubusercontent.com/u/99399439?v=4)
 
