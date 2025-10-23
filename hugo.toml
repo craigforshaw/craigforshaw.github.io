@@ -1,13 +1,13 @@
 baseURL = 'https://craigforshaw.github.io/'
 languageCode = 'en-us'
-title = 'Craig Forshaw Blog'
+title = "Craig Forshaw's Technical Blog"
 theme = 'PaperMod'
 
 [pagination]
   pagerSize = 5
 
 [params]
-  description = "Welcome to my blog"
+  description = "Cloud Security & Infrastructure Architecture"
   author = "Craig Forshaw"
   showShareButtons = true
   showReadingTime = true
@@ -15,13 +15,34 @@ theme = 'PaperMod'
   showBreadCrumbs = true
   showCodeCopyButtons = true
   
-  [params.homeInfoParams]
-    Title = "Welcome to my blog"
-    Content = "Thoughts, ideas, and technical writings"
+  [params.profileMode]
+    enabled = true
+    title = "Craig Forshaw"
+    subtitle = "Cloud Solutions Architect | Microsoft MVP Cloud Security"
+    imageUrl = "https://github.com/craigforshaw.png"
+    imageWidth = 150
+    imageHeight = 150
+    imageTitle = "Craig Forshaw"
+    
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+    
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+    
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "/tags/"
 
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/craigforshaw"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/craig4shaw"
 
 [menu]
   [[menu.main]]
