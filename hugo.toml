@@ -1,6 +1,6 @@
 baseURL = 'https://blog.forsh.dev/'
 languageCode = 'en-us'
-title = "My Technical Blog"
+title = "Technical Blog"
 theme = 'PaperMod'
 
 [pagination]
@@ -43,6 +43,10 @@ theme = 'PaperMod'
 [[params.socialIcons]]
   name = "linkedin"
   url = "https://linkedin.com/in/craig4shaw"
+
+[[params.socialIcons]]
+  name = "Other"
+  url = "https://sessionize.com/craig4shaw83"
 
 [menu]
   [[menu.main]]

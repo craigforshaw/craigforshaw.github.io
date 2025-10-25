@@ -3,7 +3,7 @@ title: "About"
 url: "/about/"
 ---
 
-# Craig Forshaw
+## Craig Forshaw
 
 Cloud architect & Microsoft MVP who enjoys working with Azure security, DevOps, GitHub Advanced Security, and infrastructure as code. Always learning, always sharing.
 
@@ -14,9 +14,9 @@ Cloud architect & Microsoft MVP who enjoys working with Azure security, DevOps, 
 
 ## Links
 
-- 🔗 Website/Blog: [blog.forsh.dev](https://blog.forsh.dev)
 - 🐙 GitHub: [@craigforshaw](https://github.com/craigforshaw)
 - 💼 LinkedIn: [in/craig4shaw](https://www.linkedin.com/in/craig4shaw)
+- 🔗 Sessionize: [craig4shaw83](https://sessionize.com/craig4shaw83)
 
 ## More
 

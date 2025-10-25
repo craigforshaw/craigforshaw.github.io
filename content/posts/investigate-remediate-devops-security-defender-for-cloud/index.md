@@ -41,15 +41,25 @@ Findings fall into the following categories:
 
 In the security overview there is an option to view the DevOps environment posture management recommendations. This is a new overview that gives you a good insight into the detected vulnerabilities, their risk level and risk factors.
 
+![Recommendations](recommendations.png)
+
 Using this overview we can prioritize the high level issues first and drill down further to each vulnerability that has been found. In this case we have some high priority dependency vulnerabilities in the code that need to be resolved.
+
+![github findings](github-findings.png)
 
 ## Fix code findings and dependencies
 
 To start fixing code findings and dependencies we will need to do this within GitHub by opening the security tab of the code repository. Given the amount of security vulnerabilities in this case you can look for specific issues based on the GHSA ID. This is the ID that appears in the above severity report and in each dependency issue ID in GitHub.
 
+![ghsa id](ghsa-id.png)
+
 To resolve the dependency issues GitHub automatically creates a series of pull requests that can be resolved.
 
+![pr](pr.png)
+
 Looking at the top pull request, dependabot has created this is a pull request that contains 38 fixes identified in the dependabot alerts above.
+
+![bump](bump.png)
 
 All that's needed here is to merge the pull request to automatically fix the issues in the code and this will remediate the fixes being alerted in both GitHub and eventually Defender for Cloud after a short polling period.
 
@@ -69,6 +79,8 @@ To fix IaC misconfigurations, run the Microsoft Security DevOps scanner in CI—
 There are two main scenarios you can use to run the action, firstly against an existing deployment on your main branch or against a branch pull request.
 
 The first scenario will add any identified vulnerabilities to your code scanning section of the security tab in GitHub. These can then be remediated in your code directly, to fix the already deployed issues, or you can create a branch copy fix and re-run the action as part of a pull request annotation. This fit's nicely with the second scenario, introduction of new code.
+
+![code](code.png)
 
 This scenario is the method that will prevent vulnerabilities from hitting your environment in the first place. When a developer creates new code in a branch and initiates a pull request then the action will automatically scan the branch and add issues that need to be fixed directly in the pull request.
 
