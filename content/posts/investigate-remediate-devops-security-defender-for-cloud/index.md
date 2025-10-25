@@ -7,13 +7,15 @@ tags = ['Microsoft Security', 'Defender for Cloud', 'DevSecOps', 'Azure', 'Infra
 description = 'Remediate code scanning findings in your GitHub repositories with Defender for Cloud'
 +++
 
-In my previous blog [DevOps Security with Microsoft Defender for Cloud](https://medium.com/@craig4shaw/devops-security-with-microsoft-defender-for-cloud-aaecae244750) I introduced the DevOps Security features in Defender for Cloud and how you can link and scan your GitHub code repositories for vulnerabilities before they hit your infrastructure platforms.
+In my previous blog [DevOps Security with Microsoft Defender for Cloud](file:///C:/Users/craforsh/Repo/craigforshaw.github.io/content/posts/devops-security-defender-for-cloud/index.md) I introduced the DevOps Security features in Defender for Cloud and how you can link and scan your GitHub code repositories for vulnerabilities before they hit your infrastructure platforms.
 
 In this blog I am going to focus on the options for fixing code issues based on the reporting findings from Defender for Cloud.
 
 ## Findings
 
 As mentioned previously, all of the reporting from your connected repositories appears under findings in the security overview dashboard of DevOps Security.
+
+![Results](results.png)
 
 To get some findings to remediate for this blog, I am using two vulnerable by design IaC code repositories developed by Bridgecrew:
 
@@ -25,6 +27,8 @@ These repositories are perfect for testing misconfigurations and vulnerabilities
 
 Findings fall into the following categories:
 
+![Findings type](finding-type.png)
+
 **Code** — findings that are based on the CodeQL scanning in GitHub (CodeQL is the code analysis engine developed by GitHub to automate security checks).
 
 **IaC** — IaC findings from the DevOps Security GitHub Action / Azure DevOps pipeline.
@@ -33,7 +37,7 @@ Findings fall into the following categories:
 
 **Dependencies** — Dependabot alerts from GitHub that include security updates and dependency version updates.
 
-## Recommendations (Preview)
+## Recommendations
 
 In the security overview there is an option to view the DevOps environment posture management recommendations. This is a new overview that gives you a good insight into the detected vulnerabilities, their risk level and risk factors.
 
