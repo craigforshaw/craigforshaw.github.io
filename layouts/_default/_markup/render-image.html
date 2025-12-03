@@ -1,0 +1,8 @@
+{{- $alt := .PlainText | htmlUnescape -}}
+{{- $caption := .Title -}}
+<a href="{{ .Destination | safeURL }}" class="lightbox-trigger" data-lightbox="image">
+    <img src="{{ .Destination | safeURL }}" alt="{{ $alt }}" loading="lazy" />
+    {{- if $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+    {{- end }}
+</a>
