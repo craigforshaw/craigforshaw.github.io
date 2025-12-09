@@ -2,6 +2,7 @@ baseURL = 'https://blog.forsh.dev/'
 languageCode = 'en-us'
 title = "Technical Blog"
 theme = 'PaperMod'
+googleAnalytics = "G-8GVQ8YS2WJ"
 
 [pagination]
   pagerSize = 5
@@ -14,7 +15,6 @@ theme = 'PaperMod'
   showPostNavLinks = true
   showBreadCrumbs = true
   showCodeCopyButtons = true
-  googleAnalyticsID = "G-8GVQ8YS2WJ"
   
   [params.profileMode]
     enabled = true
