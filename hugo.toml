@@ -1,4 +1,4 @@
-baseURL = 'https://blog.forsh.dev/'
+baseURL = 'https://www.forsh.dev/'
 languageCode = 'en-us'
 title = "Technical Blog"
 theme = 'PaperMod'
