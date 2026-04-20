@@ -1,3 +1,35 @@
+{{- if hugo.IsProduction }}
+<!-- GDPR Cookie Consent Banner -->
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--entry); border-top:1px solid var(--border); padding:16px 24px; z-index:9998; box-shadow:0 -2px 8px rgba(0,0,0,0.15);">
+  <div style="max-width:800px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+    <p style="margin:0; flex:1; min-width:200px; font-size:14px; color:var(--content);">
+      This site uses Google Analytics to collect anonymous usage data to help improve the content. By accepting, you consent to the use of cookies for analytics purposes.
+    </p>
+    <div style="display:flex; gap:8px; flex-shrink:0;">
+      <button id="cookie-decline" style="padding:8px 18px; border:1px solid var(--border); border-radius:4px; background:transparent; color:var(--content); cursor:pointer; font-size:14px;">Decline</button>
+      <button id="cookie-accept" style="padding:8px 18px; border:none; border-radius:4px; background:var(--primary); color:var(--theme); cursor:pointer; font-size:14px; font-weight:600;">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  var consent = localStorage.getItem('cookie-consent');
+  if (!consent) {
+    document.getElementById('cookie-banner').style.display = 'block';
+  }
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'accepted');
+    document.getElementById('cookie-banner').style.display = 'none';
+    if (typeof loadGoogleAnalytics === 'function') loadGoogleAnalytics();
+  });
+  document.getElementById('cookie-decline').addEventListener('click', function() {
+    localStorage.setItem('cookie-consent', 'declined');
+    document.getElementById('cookie-banner').style.display = 'none';
+  });
+})();
+</script>
+{{- end }}
+
 {{- if .Params.lightbox | default true }}
 <style>
 .lightbox-trigger {
