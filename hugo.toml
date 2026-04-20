@@ -16,6 +16,13 @@ googleAnalytics = "G-8GVQ8YS2WJ"
   showBreadCrumbs = true
   showCodeCopyButtons = true
 
+  [params.assets]
+    favicon = "/favicon.svg"
+    favicon16x16 = "/favicon.svg"
+    favicon32x32 = "/favicon.svg"
+    msapplication_TileColor = "#1a73e8"
+    theme_color = "#1a73e8"
+
   [params.homeInfoParams]
     Title = "Welcome!"
     Content = """I'm Craig Forshaw, a Microsoft MVP specializing in cloud security and Azure IaC, and organizer of the Microsoft Security User Group. \
