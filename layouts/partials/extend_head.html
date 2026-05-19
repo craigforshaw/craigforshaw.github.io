@@ -1,22 +1,12 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 {{- if hugo.IsProduction }}
-<!-- Google Analytics - loaded only after cookie consent -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GVQ8YS2WJ"></script>
 <script>
-  function loadGoogleAnalytics() {
-    if (document.getElementById('ga-script')) return;
-    var s = document.createElement('script');
-    s.id = 'ga-script';
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-8GVQ8YS2WJ';
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', 'G-8GVQ8YS2WJ');
-  }
-  if (localStorage.getItem('cookie-consent') === 'accepted') {
-    loadGoogleAnalytics();
-  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GVQ8YS2WJ');
 </script>
 {{- end }}

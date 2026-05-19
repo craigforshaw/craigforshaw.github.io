@@ -20,7 +20,6 @@
   document.getElementById('cookie-accept').addEventListener('click', function() {
     localStorage.setItem('cookie-consent', 'accepted');
     document.getElementById('cookie-banner').style.display = 'none';
-    if (typeof loadGoogleAnalytics === 'function') loadGoogleAnalytics();
   });
   document.getElementById('cookie-decline').addEventListener('click', function() {
     localStorage.setItem('cookie-consent', 'declined');
